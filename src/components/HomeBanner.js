@@ -2,7 +2,7 @@ import React from 'react'
 import './HomeBanner.css'
 import inno from '../Assets/techno.png'
 import _3_img from '../Assets/_3_img.png'
-
+import { Link } from "react-router-dom";
 
 
 const HomeBanner = () => {
@@ -33,6 +33,7 @@ const HomeBanner = () => {
       <div className="banner-text">
         <p>Where Ideas and Tech Collide for limitless possiblities </p>
       </div>
+      <Link to="/register">
       <div className="banner-btn">
       <button class="btn" type="button">
   <strong>REGISTER</strong>
@@ -44,7 +45,7 @@ const HomeBanner = () => {
     <div class="circle"></div>
   </div>
 </button>
-      </div>
+      </div></Link>
     </div>
   )
 }

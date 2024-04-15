@@ -7,16 +7,17 @@
     #3a2c09);
     border-radius: 2.5em;
     padding: 30px;
-    width: 300px;
-    height: 350px;
+    /* width: 300px; */
+    width: 29.5vw;
+    height: 69vh;
   }
   
   .r-form::before {
     content: '';
     background-image: linear-gradient(45deg, #ff0000, 
     #ffb700);
-    height: 358px;
-    width: 309px;
+    height:70vh;
+    width: 30vw;
     position: absolute;
     margin-top: -34px;
     margin-left: px;
@@ -104,4 +105,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10vw;
+  }
+  .my-viewer{
+    width: 35vw;
   }

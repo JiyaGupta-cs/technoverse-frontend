@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeBanner.css'
-import inno from '../Assets/innohack.png'
+import inno from '../Assets/techno.png'
 import _3_img from '../Assets/_3_img.png'
 
 
@@ -21,14 +21,14 @@ const HomeBanner = () => {
 
 <div class="container">
   <div class="background-color">
-    <p>Hacks</p>
+    <p>Verse</p>
   </div>
 </div>
 
 </div>
-<div className="_5">
+{/* <div className="_5">
 <img  className="_5-img" src={_3_img} alt="" />
-</div>
+</div> */}
         </div>
       <div className="banner-text">
         <p>Where Ideas and Tech Collide for limitless possiblities </p>
@@ -39,13 +39,11 @@ const HomeBanner = () => {
   <div id="container-stars">
     <div id="stars"></div>
   </div>
-
   <div id="glow">
     <div class="circle"></div>
     <div class="circle"></div>
   </div>
 </button>
-
       </div>
     </div>
   )

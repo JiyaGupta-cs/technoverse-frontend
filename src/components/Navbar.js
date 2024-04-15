@@ -31,7 +31,7 @@ const Navbar = () => {
 				}
 			>
 				<NavContainer>
-					<NavLogo className="nav-bf" href="#">
+					<NavLogo className="nav-bf" href="/">
                     <img className="nav-bf glow" style={{width:'100%'}} src={nav_logo} alt="Your Alt Text"/>
 					</NavLogo>
 					<MobileIcon>
@@ -39,23 +39,28 @@ const Navbar = () => {
 					</MobileIcon>
 					<NavMenu>
 						<NavItem>
-							<NavLinks href="#">
+							<NavLinks href="/">
 								Speakers
 							</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks href="#">
+							<NavLinks href="/">
 								Sponsors
 							</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks href="#">
+							<NavLinks href="/">
 								Glimpses
 							</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks href="#">
+							<NavLinks href="/">
 								FAQs
+							</NavLinks>
+						</NavItem>
+						<NavItem>
+							<NavLinks href="/register">
+								Register
 							</NavLinks>
 						</NavItem>
 						

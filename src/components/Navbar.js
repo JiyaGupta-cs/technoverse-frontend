@@ -10,6 +10,7 @@ import {
 	MobileIcon,
 } from "./NavbarStyles";
 import "../App.css";
+import nav_logo from '../Assets/t_logo.png'
 const Navbar = () => {
 	const [colorChange, setColorchange] = useState(false);
 	const changeNavbarColor = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
 			>
 				<NavContainer>
 					<NavLogo className="nav-bf" href="#">
-                    <img className="nav-bf glow" src="https://res.cloudinary.com/dhnkuonev/image/upload/v1699458313/hnlogo_ei64kd.png" alt="Your Alt Text"/>
+                    <img className="nav-bf glow" style={{width:'100%'}} src={nav_logo} alt="Your Alt Text"/>
 					</NavLogo>
 					<MobileIcon>
 						<FaBars />
@@ -39,7 +40,7 @@ const Navbar = () => {
 					<NavMenu>
 						<NavItem>
 							<NavLinks href="#">
-								Timeline
+								Speakers
 							</NavLinks>
 						</NavItem>
 						<NavItem>

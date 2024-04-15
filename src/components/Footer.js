@@ -21,11 +21,11 @@ const Footer = () => {
           </div>
 
           <div class="social">
-            <a href="#"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.instagram.com/technocrats.kiet/"><i class="icon ion-social-instagram"></i></a>
             <a href="#"><i class="icon bi bi-discord"></i></a>
-            <a href="#"><i class="icon ion-social-twitter"></i></a>
-            <a href="#"><i class="icon ion-social-linkedin"></i></a>
-            <a href="#"><i class="bi bi-globe"></i></a>
+            <a href="https://twitter.com/Technocrats_?t=lzevmiGsTKuZHYumdZkKIA&s=08"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/technocrats-kiet/"><i class="icon ion-social-linkedin"></i></a>
+            <a href="https://technocrats.live/"><i class="bi bi-globe"></i></a>
           </div>
           <p class="copyright">© 2024 TechnoVerse - All Rights Reserved</p>
         </footer>

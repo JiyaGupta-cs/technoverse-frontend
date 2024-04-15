@@ -122,9 +122,20 @@
     z-index: -1;
   }
   @media (max-width: 750px) {
-    #background-video { display: none; }
+    /* #background-video { display: none; } */
     body {
-      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-      background-size: cover;
+      /* background: url("https://i.pinimg.com/564x/60/86/53/608653e1f358ec5c40a9550e880eb4c0.jpg") no-repeat; */
+      /* background-size: cover; */
+    }
+    .register{flex-direction: column;}
+    .r-form {
+        width: 90vw;
+    }
+    .r-form::before {
+        width: 92vw;
+    }
+    .my-viewer {
+        width: 90vw;
+        height: fit-content;
     }
 }

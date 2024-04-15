@@ -17,7 +17,7 @@ const Footer = () => {
         <footer>
           <div className="footer-logos">
             <img className='foot-logo' src={kietlogo} alt="" />
-            <img style={{width:'30vw'}} src={logo} alt="" />
+            <img className='foot-logo2' src={logo} alt="" />
           </div>
 
           <div class="social">

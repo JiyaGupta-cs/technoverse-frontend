@@ -1,8 +1,9 @@
 import React from 'react'
+import './Register.css'
 
 const Register = () => {
   return (
-    <div>
+    <div className='register'>
       <form class="r-form">
     <input class="r-input" type="text" placeholder="Name"/>
     <input class="r-input" type="text" placeholder="E-Mail I.D."/>

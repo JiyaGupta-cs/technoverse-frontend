@@ -53,7 +53,7 @@ window.addEventListener("scroll", callbackFunc);
     </div>
   </li>
   <li>
-    <div style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
+    <div className='time-div' style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
       
       <div class="discovery">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />

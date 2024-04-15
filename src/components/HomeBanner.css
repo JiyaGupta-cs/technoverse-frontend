@@ -1,0 +1,318 @@
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    overflow: hidden;
+    height: 4.5rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+  }
+  
+  strong {
+    z-index: 2;
+    font-family: 'Prompt','Avalors Personal Use';
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+  }
+  
+  #glow2 {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+  }
+  
+  .circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+  }
+  
+  .btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1)
+  }
+  
+  .btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btn:active .circle {
+    background: #FE53BB;
+  }
+  
+  #stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  .HomeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+.innohack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.inno{
+    width: 27rem;
+}
+.hack{
+    width: 28rem;
+}
+._5{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 1.5rem;
+    justify-content: center;
+    margin-top: -70px;
+    
+}
+._5-img{
+    /* background-color: purple; */
+    display: block;
+    width: 11rem;    
+}
+.banner-innohack5{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.banner-text{
+    color: white;
+    width: 40vw;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .inno{
+        width: 44vw;
+    }
+    .hack{
+        width: 43vw;
+    }
+    ._5{
+      margin-top: -25px;
+    }
+    ._5-img{
+        width: 20vw;
+    }
+    .innohack{
+        gap: 0rem;
+    }
+    .btn{
+        width: 15rem;
+        height: 3.5rem;
+    }
+    .banner-text{
+        color: white;
+        font-size: 18px;
+    }
+    .page__wrapper{
+        width: 90vw;
+        padding: 0.5rem;
+    }
+    .HomeBanner{
+        gap: 1rem;
+    }
+    .banner-text{width: 90vw;}
+}
+
+
+
+
+.container {
+  /* padding: 1vw; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* margin-right: -50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.background-color p {
+  color: #000;
+  /* font-family: 'Prompt'; */
+  font-size: 10rem;
+  font-weight: bold;
+  /* letter-spacing: 1vw; */
+  max-width: 700px;
+  text-align: center;
+  background: rgba(255, 253, 160, 1);
+  /* background: -webkit-linear-gradient( left, #00ffff 0%, #FAAC4D 25%, #97b1fb 50%, #00ffff 100%) repeat; */
+
+  background: -webkit-linear-gradient( left, #00ffff 0%, #ffdb3b 25%, #FE53BB 50%, #00ffff 100%) repeat;
+
+  /* background: -webkit-linear-gradient( left, linear-gradient(#212121, #212121) 0%,  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%) repeat); */
+  /* background: -webkit-linear-gradient( left, #DD40D3 0%, #8D4DF7 20%,#8D4DF7 40%, #97fba0 60%, #97b1fb 80%, #00ffff 100%) repeat; */
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  animation-name: masked-animation;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+
+  /* font-family: 'Poppins', sans-serif; */
+font-family: 'Black Ops One';
+/* font-family: 'Space Grotesk', sans-serif; */
+}
+
+@keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8000px -3000px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.background-color p {
+  font-size: 3.6rem;
+}}

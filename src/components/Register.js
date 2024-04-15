@@ -1,9 +1,16 @@
 import React from 'react'
 import './Register.css'
 import Viewer from './Viewer'
+import sample from '../Assets/sample2.mp4';
+
 
 const Register = () => {
-  return (
+  return (<>
+    <video id="background-video" autoPlay loop muted 
+    >
+  <source src={sample} type="video/mp4"/>
+  
+</video>
     <div className='register'>
       <form class="r-form">
     <input class="r-input" type="text" placeholder="Name"/>
@@ -17,7 +24,7 @@ const Register = () => {
 <div className='my-viewer'>
 <Viewer/>
 </div>
-    </div>
+    </div></>
   )
 }
 

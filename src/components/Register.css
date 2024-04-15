@@ -135,7 +135,10 @@
         width: 92vw;
     }
     .my-viewer {
-        width: 90vw;
-        height: fit-content;
+        width: 80vw;
+    height: 50vh;
+    }
+    .box{
+        /* height: 50vh; */
     }
 }

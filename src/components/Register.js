@@ -23,9 +23,10 @@ const Register = () => {
                 {/* <textarea class="r-textarea" placeholder="Enter message"></textarea>  */}
                 <center><button class="r-button">Register</button></center>
             </form>
+            <div className="box">
             <div className='my-viewer'>
                 <Viewer />
-            </div>
+            </div></div>
         </div>
         <Footer/>
         </>

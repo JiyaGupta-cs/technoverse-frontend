@@ -69,6 +69,23 @@ const Viewer = () => {
                   height: 50px;
                   background-color: #141417;
               }
+              @media only screen and (max-width: 600px) {
+              #container {
+                height: 50vh !important;
+            }
+            body{
+                height:auto;
+            }#spline-container {
+                width: 100%;
+                height: 52vh;
+            }
+            #overlay {
+                position: fixed;
+                bottom: 333px;
+            }
+        }
+
+
               </style>
           </head>
           <body>

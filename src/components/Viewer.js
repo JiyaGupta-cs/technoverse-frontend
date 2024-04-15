@@ -80,8 +80,9 @@ const Viewer = () => {
                 height: 52vh;
             }
             #overlay {
-                bottom: 333px;
-            }
+                position: relative;
+                bottom: -437px;
+                right: -172px;}
         }
 
 

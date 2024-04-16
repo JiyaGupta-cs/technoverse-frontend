@@ -5,6 +5,7 @@ import sample from "../Assets/sample2.mp4";
 import technoverse from "../Assets/technoverse.png";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import qr from "../Assets/qr.jpg"
 
 const Register = () => {
   const [select, setSelect] = useState(false);
@@ -163,7 +164,7 @@ const Register = () => {
               setEmail(e.target.value);
             }}
           />
-          <div className="r-input">College name ?</div>
+          <div className="r-inputios text-white ">College name ?</div>
 
           <div className="flex items-center">
             <label className="flex items-center mr-4">
@@ -197,9 +198,11 @@ const Register = () => {
                   setcollegename(e.target.value);
                 }}
               />
-              
-              <img src="" alt="payment qr logo " />
-              <div>Note:- Do take a screenshot after payement </div>
+              <div className="w-44">
+
+              <img src={qr} alt="payment qr logo " />
+              </div>
+              <div className="text-red-400 ">Note:-Rs 50 is registration fee, Do take a screenshot after payement </div>
             </div>
           )}
 

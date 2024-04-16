@@ -64,6 +64,17 @@
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.2s;
   }
+
+  .r-inputios {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: transparent;
+    color: #ff5900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+  }
   
   .r-input:focus {
     border: 1px solid #66da4300;

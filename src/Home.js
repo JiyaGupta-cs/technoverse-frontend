@@ -5,7 +5,6 @@ import FAQ from "./components/FAQ";
 import HomeBanner from "./components/HomeBanner";
 import Timeline from "./components/Timeline";
 import Sponsors from "./components/Sponsors";
-import Glimpses from "./components/Glimpses";
 import Footer from "./components/Footer";
 
 const Home = () => {
@@ -22,8 +21,6 @@ const Home = () => {
           }
         ></div>
       </Fragment>
-
-      {/* <Banner/> */}
       <HomeBanner />
       <Timeline />
       <Sponsors />

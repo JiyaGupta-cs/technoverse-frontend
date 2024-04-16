@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Home from "./Home";
 import Register from "./components/Register";
 import {

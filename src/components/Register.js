@@ -6,6 +6,8 @@ import technoverse from "../Assets/technoverse.png";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import qr from "../Assets/qr.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const [select, setSelect] = useState(false);
@@ -43,22 +45,24 @@ const Register = () => {
     return re.test(phone);
   };
 
-  useEffect(() => {
-    setdata({
-      name: name,
-      email: email,
-      phone: phone,
-      branch: branch,
-      year: year,
-      kietmail: kietmail,
-      collegename: collegename,
-      transaction: id,
-    });
-
-    console.log(data);
-  });
+  // useEffect(() => {
+  //   setdata({
+  //     name: name,
+  //     email: email,
+  //     phone: phone,
+  //     branch: branch,
+  //     year: year,
+  //     kietmail: kietmail,
+  //     collegename: collegename,
+  //     transaction: id,
+  //   });
+  // });
 
   const HandleSubmit = (e) => {
+    e.preventDefault();
+    setEmailError("");
+    setPhoneError("");
+
     setdata({
       name: name,
       email: email,
@@ -69,22 +73,28 @@ const Register = () => {
       collegename: collegename,
       transaction: id,
     });
-
     let isValid = true;
 
     console.log(data);
 
     if (!validateEmail(email)) {
       setEmailError("Please enter a valid email address");
+      toast("❌ Not a valid email address");
       isValid = false;
     }
 
     if (!validatePhone(phone)) {
       setPhoneError("Phone number should contain 10 digits only");
+      toast("❌ Not a valid phone number");
+
       isValid = false;
     }
 
+    console.log(isValid);
+
     if (isValid) {
+      toast("✅ You are registered");
+
       fetch("https://technoverse-backend.onrender.com/register", {
         method: "POST",
         headers: {
@@ -94,10 +104,12 @@ const Register = () => {
       })
         .then(() => {
           console.log("data sent");
+         
         })
         .catch((err) => {
           console.log(err);
         });
+      
     }
   };
 
@@ -107,15 +119,18 @@ const Register = () => {
         <source src={sample} type="video/mp4" />
       </video>
       <Navbar />
+      <ToastContainer />
       <div className="register w-full h-full">
-        <form class="r-form lg:mb-10 " onSubmit={HandleSubmit} >
+        <form class="r-form lg:mb-10 " onSubmit={HandleSubmit}>
           <img
             src={technoverse}
             width={"300px"}
             style={{ marginBottom: "2rem" }}
             alt=""
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Name </div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">
+            Enter your Name{" "}
+          </div>
           <input
             class="r-input"
             type="text"
@@ -125,7 +140,9 @@ const Register = () => {
               setName(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Branch</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">
+            Enter your Branch
+          </div>
           <input
             class="r-input"
             type="text"
@@ -135,7 +152,9 @@ const Register = () => {
               setbranch(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Year</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">
+            Enter your Year
+          </div>
           <input
             class="r-input"
             type="text"
@@ -145,7 +164,9 @@ const Register = () => {
               setyear(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Phone number</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">
+            Enter your Phone number
+          </div>
 
           <input
             class="r-input"
@@ -156,7 +177,10 @@ const Register = () => {
               setPhone(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Email</div>
+          <div className="text-red-400 ">{phoneError}</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">
+            Enter your Email
+          </div>
 
           <input
             class="r-input"
@@ -167,7 +191,10 @@ const Register = () => {
               setEmail(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">College name ?</div>
+          <div className="text-red-400">{emailError}</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">
+            College name ?
+          </div>
 
           <div className="flex items-center">
             <div className="flex items-center mr-4">

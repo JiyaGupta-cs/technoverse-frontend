@@ -1,86 +1,108 @@
-import React,{useEffect} from 'react'
-import './Timeline.css'
+import React, { useEffect } from "react";
+import "./Timeline.css";
 
 const Timeline = () => {
+  useEffect(() => {
+    var items = document.querySelectorAll(".timeline li");
 
-    useEffect(() => {
-        var items = document.querySelectorAll(".timeline li");
-
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-function callbackFunc() {
-  for (var i = 0; i < items.length; i++) {
-    if (isElementInViewport(items[i])) {
-      if(!items[i].classList.contains("in-view")){
-        items[i].classList.add("in-view");
-      }
-    } else if(items[i].classList.contains("in-view")) {
-        items[i].classList.remove("in-view");
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
     }
-  }
-}
- 
-window.addEventListener("load", callbackFunc);
-window.addEventListener("scroll", callbackFunc);
 
-    })
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          if (!items[i].classList.contains("in-view")) {
+            items[i].classList.add("in-view");
+          }
+        } else if (items[i].classList.contains("in-view")) {
+          items[i].classList.remove("in-view");
+        }
+      }
+    }
+
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+  });
 
   return (
     <div>
       <section class="timeline">
-      <h1 class="timeline-heading">Speakers</h1>
-<ul>
-  <li>
-    <div style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
-      
-      <div class="discovery">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />
-      </div>
-      <div class="scientist">
-        <h1>Love Babbar</h1>
-        <span>
-        Founder-CodeHelp | Youtuber | Ex-Amazon</span>
-        
-      </div><time>2 pm</time>
-    </div>
-  </li>
-  <li>
-    <div className='time-div' style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
-      
-      <div class="discovery">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />
-      </div>
-      <div class="scientist">
-        <h1>Love Babbar</h1>
-        <span>
-        Founder-CodeHelp | Youtuber | Ex-Amazon</span>
-        
-      </div><time>2 pm</time>
-    </div>
-  </li>
-  <li>
-    <div style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
-      
-      <div class="discovery">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />
-      </div>
-      <div class="scientist">
-        <h1>Love Babbar</h1>
-        <span>
-        Founder-CodeHelp | Youtuber | Ex-Amazon</span>
-        
-      </div><time>2 pm</time>
-    </div>
-  </li>
-  {/* <li>
+        <h1 class="timeline-heading">Speakers</h1>
+        <ul>
+          <li>
+            <div
+              style={{
+                height: "450px",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div class="discovery">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s"
+                  alt=""
+                />
+              </div>
+              <div class="scientist">
+                <h1>Revealing sooon...</h1>
+                <span></span>
+              </div>
+              <time>2 pm</time>
+            </div>
+          </li>
+          <li>
+            <div
+              className="time-div"
+              style={{
+                height: "450px",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div class="discovery">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s"
+                  alt=""
+                />
+              </div>
+              <div class="scientist">
+                <h1>Revealing soon...</h1>
+                <span></span>
+              </div>
+              <time>4 pm</time>
+            </div>
+          </li>
+          <li>
+            <div
+              style={{
+                height: "450px",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div class="discovery">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s"
+                  alt=""
+                />
+              </div>
+              <div class="scientist">
+                <h1>Revealing soon...</h1>
+                <span></span>
+              </div>
+              <time>2 pm</time>
+            </div>
+          </li>
+          {/* <li>
     <div>
       <time>1785</time>
       <div class="discovery">
@@ -245,10 +267,10 @@ window.addEventListener("scroll", callbackFunc);
       </div>
     </div>
   </li> */}
-</ul>
-</section>
+        </ul>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Timeline
+export default Timeline;

@@ -14,19 +14,19 @@ const FAQ = () => {
 		<div class="accordion">
 			<details>
 			  <summary>Where is the event?</summary>
-			  <p>That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question to ask friends, f</p>
+			  <p>The event is at KIET, auditourium </p>
 			</details>
 			<details>
-			  <summary>Do you include common questions?</summary>
-			  <p>This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator are questions that elicit a bit more information that a typical common question.</p>
+			  <summary>Till how many days event will go on?</summary>
+			  <p>Its a one day event. </p>
 			</details>
 			<details>
-			  <summary>Can I use this for 21 questions?</summary>
-			  <p>Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated and you'll instantly have a random list of 21 questions to use. If you want to curate the 21 questions to use, you can spend some time on the generator until you find 21 questions you like, then use those the next time you play the 21 questions game.</p>
+			  <summary>Is there any registration cost ?</summary>
+			  <p>Yes! If you are from other college then there will be a registration fee.</p>
 			</details>
 			<details>
-			  <summary>Are these questions for girls or for boys?</summary>
-			  <p>The questions in this generator are gender neutral and can be used to ask either male of females (or any other gender the person identifies with). These questions were created to elicit interesting and thoughtful answers and aren't specific to a specific type of person.</p>
+			  <summary>Who are the speakers ?</summary>
+			  <p>Speakers are tech industry professionals who will share with y'all their experinces and will tell you about the upcoming trends </p>
 			</details>
 		</div>
 	</div>

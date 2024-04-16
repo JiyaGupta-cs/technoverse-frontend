@@ -48,11 +48,7 @@ const Navbar = () => {
 								Sponsors
 							</NavLinks>
 						</NavItem>
-						<NavItem>
-							<NavLinks href="/">
-								Glimpses
-							</NavLinks>
-						</NavItem>
+						
 						<NavItem>
 							<NavLinks href="/">
 								FAQs

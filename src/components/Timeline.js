@@ -56,7 +56,7 @@ const Timeline = () => {
                 <h1>Revealing sooon...</h1>
                 <span></span>
               </div>
-              <time>2 pm</time>
+              <time>1 pm </time>
             </div>
           </li>
           <li>
@@ -78,7 +78,7 @@ const Timeline = () => {
                 <h1>Revealing soon...</h1>
                 <span></span>
               </div>
-              <time>4 pm</time>
+              <time>2 pm </time>
             </div>
           </li>
           <li>
@@ -99,7 +99,7 @@ const Timeline = () => {
                 <h1>Revealing soon...</h1>
                 <span></span>
               </div>
-              <time>2 pm</time>
+              <time>3 pm </time>
             </div>
           </li>
           {/* <li>

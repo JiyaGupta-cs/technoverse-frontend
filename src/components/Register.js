@@ -108,14 +108,14 @@ const Register = () => {
       </video>
       <Navbar />
       <div className="register w-full h-full">
-        <form class="r-form" onSubmit={HandleSubmit}>
+        <form class="r-form lg:mb-10 " onSubmit={HandleSubmit} >
           <img
             src={technoverse}
             width={"300px"}
             style={{ marginBottom: "2rem" }}
             alt=""
           />
-          <div className="text-white ">Enter your Name </div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Name </div>
           <input
             class="r-input"
             type="text"
@@ -125,7 +125,7 @@ const Register = () => {
               setName(e.target.value);
             }}
           />
-          <div>Enter your Branch</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Branch</div>
           <input
             class="r-input"
             type="text"
@@ -135,7 +135,7 @@ const Register = () => {
               setbranch(e.target.value);
             }}
           />
-          <div>Enter your Year</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Year</div>
           <input
             class="r-input"
             type="text"
@@ -145,7 +145,7 @@ const Register = () => {
               setyear(e.target.value);
             }}
           />
-          <div>Enter your Phone number</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Phone number</div>
 
           <input
             class="r-input"
@@ -156,7 +156,7 @@ const Register = () => {
               setPhone(e.target.value);
             }}
           />
-          <div>Enter your Email</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">Enter your Email</div>
 
           <input
             class="r-input"
@@ -167,22 +167,22 @@ const Register = () => {
               setEmail(e.target.value);
             }}
           />
-          <div className="r-inputios text-white ">College name ?</div>
+          <div className="text-white w-full pl-3 text-xl font-bold ">College name ?</div>
 
           <div className="flex items-center">
-            <label className="flex items-center mr-4">
+            <div className="flex items-center mr-4">
               <input
-                className="r-input"
+                className="r-input mt-5"
                 type="radio"
                 name="options"
                 checked={!select}
                 onChange={() => setSelect(false)}
               />
-              <span class="ml-2">KIET</span>
-            </label>
+              <div class="ml-2">KIET</div>
+            </div>
             <label className="flex items-center">
               <input
-                className="r-input"
+                className="r-input mt-5"
                 type="radio"
                 name="options"
                 onChange={() => setSelect(true)}

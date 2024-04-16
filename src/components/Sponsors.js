@@ -7,49 +7,40 @@ const Sponsors = () => {
              <h1 class="sponsor-heading">Sponsors</h1>
             <div className="sponsor-cards">
                 <div class="card">
+                <p style={{fontSize:"80px"}}>⏳</p>
                     <p class="heading">
-                        Popular this month
+                        Announcing Soon
                     </p>
-                    <p>
-                        Powered By
-                    </p>
-                    <p>Uiverse
+                    
+                    <p>Associate Sponsor
                     </p></div>
-                    <div class="card">
+                    <div class="card"><p style={{fontSize:"80px"}}>⏳</p>
                     <p class="heading">
-                        Popular this month
+                        Announcing Soon
                     </p>
-                    <p>
-                        Powered By
-                    </p>
-                    <p>Uiverse
+                    
+                    <p>Merchandise Partners
                     </p></div>
-                    <div class="card">
+                    <div class="card"><p style={{fontSize:"80px"}}>⏳</p>
                     <p class="heading">
-                        Popular this month
+                        Announcing Soon
                     </p>
-                    <p>
-                        Powered By
-                    </p>
-                    <p>Uiverse
+                    
+                    <p>Theme Partner
                     </p></div>
-                    <div class="card">
+                    <div class="card"><p style={{fontSize:"80px"}}>⏳</p>
                     <p class="heading">
-                        Popular this month
+                        Announcing Soon
                     </p>
-                    <p>
-                        Powered By
-                    </p>
-                    <p>Uiverse
+                    
+                    <p>Theme Partner
                     </p></div>
-                    <div class="card">
+                    <div class="card"><p style={{fontSize:"80px"}}>⏳</p>
                     <p class="heading">
-                        Popular this month
+                        Announcing Soon
                     </p>
-                    <p>
-                        Powered By
-                    </p>
-                    <p>Uiverse
+                    
+                    <p>Theme Partner
                     </p></div>
             </div>
         </div>

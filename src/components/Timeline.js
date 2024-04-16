@@ -36,24 +36,51 @@ window.addEventListener("scroll", callbackFunc);
   return (
     <div>
       <section class="timeline">
-      <h1 class="timeline-heading">Timeline</h1>
+      <h1 class="timeline-heading">Speakers</h1>
 <ul>
   <li>
-    <div>
-      <time>1687</time>
+    <div style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
+      
       <div class="discovery">
-        <h1>Discovery</h1>
-        <p>
-          Laws of motion
-        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />
       </div>
       <div class="scientist">
-        <h1>Scientist</h1>
-        <span>Newton</span>
-      </div>
+        <h1>Love Babbar</h1>
+        <span>
+        Founder-CodeHelp | Youtuber | Ex-Amazon</span>
+        
+      </div><time>2 pm</time>
     </div>
   </li>
   <li>
+    <div className='time-div' style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
+      
+      <div class="discovery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />
+      </div>
+      <div class="scientist">
+        <h1>Love Babbar</h1>
+        <span>
+        Founder-CodeHelp | Youtuber | Ex-Amazon</span>
+        
+      </div><time>2 pm</time>
+    </div>
+  </li>
+  <li>
+    <div style={{height:'450px',justifyContent:'center',alignItems:'center'}}>
+      
+      <div class="discovery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCb7r4Yx3_cz13-UTHY6goBmQuMoGdkLz7Chlub87U1g&s" alt="" />
+      </div>
+      <div class="scientist">
+        <h1>Love Babbar</h1>
+        <span>
+        Founder-CodeHelp | Youtuber | Ex-Amazon</span>
+        
+      </div><time>2 pm</time>
+    </div>
+  </li>
+  {/* <li>
     <div>
       <time>1785</time>
       <div class="discovery">
@@ -217,7 +244,7 @@ window.addEventListener("scroll", callbackFunc);
         <span>Anrico Fermi</span>
       </div>
     </div>
-  </li>
+  </li> */}
 </ul>
 </section>
     </div>

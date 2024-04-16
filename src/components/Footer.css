@@ -69,9 +69,15 @@
   .foot-logo{
     width: 18vw;
   }
+  .foot-logo2{
+    width: 30vw;
+  }
   @media only screen and (max-width: 600px) {
     .foot-logo{
         width: 40vw;
+      }
+      .foot-logo2{
+        width: 60vw;
       }
       .footer-logos{
         gap: 1rem;

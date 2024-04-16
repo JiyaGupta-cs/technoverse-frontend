@@ -5,7 +5,7 @@ import sample from "../Assets/sample2.mp4";
 import technoverse from "../Assets/technoverse.png";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import qr from "../Assets/qr.jpg"
+import qr from "../Assets/qr.jpg";
 
 const Register = () => {
   const [select, setSelect] = useState(false);
@@ -20,6 +20,7 @@ const Register = () => {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [id, setid] = useState("");
 
   const [data, setdata] = useState({
     name: name,
@@ -29,6 +30,7 @@ const Register = () => {
     year: year,
     kietmail: kietmail,
     collegename: collegename,
+    transaction: id,
   });
 
   const validateEmail = (email) => {
@@ -50,13 +52,13 @@ const Register = () => {
       year: year,
       kietmail: kietmail,
       collegename: collegename,
+      transaction: id,
     });
 
     console.log(data);
-  })
+  });
 
   const HandleSubmit = (e) => {
-
     setdata({
       name: name,
       email: email,
@@ -65,6 +67,7 @@ const Register = () => {
       year: year,
       kietmail: kietmail,
       collegename: collegename,
+      transaction:id,
     });
 
     let isValid = true;
@@ -199,10 +202,20 @@ const Register = () => {
                 }}
               />
               <div className="w-44">
-
-              <img src={qr} alt="payment qr logo " />
+                <img src={qr} alt="payment qr logo " />
               </div>
-              <div className="text-red-400 ">Note:-Rs 50 is registration fee, Do take a screenshot after payement </div>
+              <div>
+                <input
+                  type="text"
+                  className="r-input"
+                  placeholder="Enter your transaction id"
+                  onChange={(e) => setid(e.target.value)}
+                />
+              </div>
+              <div className="text-red-400 ">
+                Note:-Rs 50 is registration fee, Do take a screenshot after
+                payment{" "}
+              </div>
             </div>
           )}
 
@@ -216,17 +229,11 @@ const Register = () => {
                   setkietmail(e.target.value);
                 }}
               />
-              
             </div>
           )}
 
           <center>
-            <button
-              class="r-button"
-              
-            >
-              Register
-            </button>
+            <button class="r-button">Register</button>
           </center>
         </form>
         <div className="box">

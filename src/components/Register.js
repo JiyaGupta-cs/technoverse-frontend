@@ -67,7 +67,7 @@ const Register = () => {
       year: year,
       kietmail: kietmail,
       collegename: collegename,
-      transaction:id,
+      transaction: id,
     });
 
     let isValid = true;
@@ -102,7 +102,7 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="text-white ">
       <video id="background-video" autoPlay loop muted>
         <source src={sample} type="video/mp4" />
       </video>

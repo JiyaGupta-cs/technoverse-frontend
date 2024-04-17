@@ -114,7 +114,12 @@ const Register = () => {
   };
 
   return (
-    <div className="text-white " style={{ fontFamily: "Poppins" }}>
+    <div className="text-white font-syne " style={{ fontFamily: "Poppins" }}>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
       <video id="background-video" autoPlay loop muted>
         <source src={sample} type="video/mp4" />
       </video>
@@ -129,7 +134,7 @@ const Register = () => {
             style={{ marginBottom: "2rem" }}
             alt=""
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">
+          <div className="text-white font-syne w-full pl-3 text-xl font-bold ">
             Enter your Name{" "}
           </div>
           <input
@@ -141,7 +146,7 @@ const Register = () => {
               setName(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">
+          <div className="text-white font-syne w-full pl-3 text-xl font-bold ">
             Enter your Branch
           </div>
           <input
@@ -153,7 +158,7 @@ const Register = () => {
               setbranch(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">
+          <div className="text-white font-syne w-full pl-3 text-xl font-bold ">
             Enter your Year
           </div>
           <input
@@ -165,7 +170,7 @@ const Register = () => {
               setyear(e.target.value);
             }}
           />
-          <div className="text-white w-full pl-3 text-xl font-bold ">
+          <div className="text-white font-syne w-full pl-3 text-xl font-bold ">
             Enter your Phone number
           </div>
 
@@ -179,7 +184,7 @@ const Register = () => {
             }}
           />
           <div className="text-red-400 ">{phoneError}</div>
-          <div className="text-white w-full pl-3 text-xl font-bold ">
+          <div className="text-white font-syne w-full pl-3 text-xl font-bold ">
             Enter your Email
           </div>
 
@@ -193,7 +198,7 @@ const Register = () => {
             }}
           />
           <div className="text-red-400">{emailError}</div>
-          <div className="text-white w-full pl-3 text-xl font-bold ">
+          <div className="text-white font-syne w-full pl-3 text-xl font-bold ">
             College name ?
           </div>
 
@@ -220,7 +225,7 @@ const Register = () => {
           </div>
 
           {select && (
-            <div className="flex flex-col gap-10 text-white ">
+            <div className="flex flex-col gap-10 text-white font-syne ">
               <input
                 type="text"
                 placeholder="Enter college name"
@@ -253,7 +258,7 @@ const Register = () => {
             <div className="flex flex-col gap-10">
               <input
                 type="text"
-                placeholder="Enter your kiet mail id"
+                placeholder="Enter your Kiet Mail ID"
                 className="r-input text-black"
                 onChange={(e) => {
                   setkietmail(e.target.value);

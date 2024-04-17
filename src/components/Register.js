@@ -63,6 +63,8 @@ const Register = () => {
     setEmailError("");
     setPhoneError("");
 
+    setEmail("hello");
+
     setdata({
       name: name,
       email: email,
@@ -104,22 +106,28 @@ const Register = () => {
       })
         .then(() => {
           console.log("data sent");
-          setName("");
-          setEmail("");
-          setPhone("");
-          setbranch("");
-          setcollegename("");
-          setkietmail("");
-          setid("");
         })
         .catch((err) => {
           console.log(err);
         });
+
+      setName("");
+      setEmail("");
+      setPhone("");
+      setbranch("");
+      setcollegename("");
+      setkietmail("");
+      setid("");
+      console.log(name);
+      
+      
+
+      console.log("this got executed ");
     }
   };
 
   return (
-    <div className="text-white " style={{fontFamily:"Poppins"}}>
+    <div className="text-white " style={{ fontFamily: "Poppins" }}>
       <video id="background-video" autoPlay loop muted>
         <source src={sample} type="video/mp4" />
       </video>

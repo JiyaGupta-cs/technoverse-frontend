@@ -1,155 +1,168 @@
 .r-form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    background-image: linear-gradient(45deg, #081333, #3a2c09);
-    border-radius: 2.5em;
-    padding: 30px;
-    /* width: 300px; */
-    width: 29.5vw;
-    /* height: 74vh; */
-  }
-  
-  .r-form::before {
-    content: '';
-    background-image: linear-gradient(45deg, #140ddd, 
-    #00FFB4);
-    height:100%;
-    width: 30vw;
-    position: absolute;
-    margin-top: -34px;
-    margin-left: px;
-    z-index: -1;
-    border-radius: 2.7em;
-  }
-  
-  .r-button {
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    background: #00FFB4;
-    color: black;
-    padding: 0.7em 5.5em;
-    display: flex;
-    align-items: center;
-    border: 2px solid #66da4300;
-    border-radius: 5em;
-    overflow: hidden;
-    transition: all 0.2s;
-    cursor: pointer;
-  }
-  
-  .r-button:hover {
-    border: 2px solid #00FFB4;
-    background: #00000000;
-    color: #00FFB4;
-  }
-  
-  .r-button:active {
-    border: 2px solid #66da4300;
-    background: #ff5900;
-    color: black;
-  }
-  
-  .r-input {
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #00FFB4;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #081333, #3a2c09);
+  border-radius: 2.5em;
+  padding: 30px;
+  /* width: 300px; */
+  width: 29.5vw;
+  /* height: 74vh; */
+  height: fit-content;
 
-  .r-inputios {
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-bottom: 20px;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s;
-  }
-  
-  .r-input:focus {
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
-  }
-  
-  .r-input::placeholder {
-    color: #9b725b;
-  }
-  
-  .r-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    width: calc(100% - 10px);
-    padding: 8px;
-    height: 100px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-  }
-  
-  .r-textarea::placeholder {
-    color: #9b725b;
-  }
-  
-  .r-textarea:focus {
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
-  }
-  .register{
-    /* min-height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10vw;
-  }
-  .my-viewer{
-    width: 35vw;
-  }
-  /* video background */
+  box-shadow: rgba(0, 208, 255, 0.24) 5px 30px 80px;
+}
+
+.r-form::before {
+  content: "";
+  background-image: linear-gradient(45deg, #140ddd, #00ffb4);
+  /* height: 100%; */
+  width: 30vw;
+  position: absolute;
+  margin-top: -34px;
+  margin-left: px;
+  z-index: -1;
+  border-radius: 2.7em;
+}
+
+.r-button {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: #00ffb4;
+  color: black;
+  padding: 0.7em 5.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #66da4300;
+  border-radius: 5em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.r-button:hover {
+  border: 2px solid #00ffb4;
+  background: #00000000;
+  color: #00ffb4;
+}
+
+.r-button:active {
+  border: 2px solid #66da4300;
+  background: #ff5900;
+  color: black;
+}
+
+.r-input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #00ffb4;
+  outline: none;
+  background-color: transparent;
+  color: #9b725b;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.r-form label {
+  color: #9b725b;
+}
+.r-form img {
+  color: #9b725b;
+}
+
+.r-inputios {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.r-input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+
+.r-input::placeholder {
+  color: #9b725b;
+}
+
+.r-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 10px);
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+}
+
+.r-textarea::placeholder {
+  color: #9b725b;
+}
+
+.r-textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+.register {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+.my-viewer {
+  width: 40vw;
+}
+/* video background */
 #background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (max-width: 750px) {
+  /* #background-video { display: none; } */
+  body {
+    /* background: url("https://i.pinimg.com/564x/60/86/53/608653e1f358ec5c40a9550e880eb4c0.jpg") no-repeat; */
+    /* background-size: cover; */
   }
-  @media (max-width: 750px) {
-    /* #background-video { display: none; } */
-    body {
-      /* background: url("https://i.pinimg.com/564x/60/86/53/608653e1f358ec5c40a9550e880eb4c0.jpg") no-repeat; */
-      /* background-size: cover; */
-    }
-    .register{flex-direction: column;}
-    .r-form {
-        width: 90vw;
-    }
-    .r-form::before {
-        width: 92vw;
-    }
-    .my-viewer {
-        width: 80vw;
+  .register {
+    flex-direction: column;
+  }
+  .r-form {
+    width: 90vw;
+  }
+  .r-form::before {
+    width: 92vw;
+  }
+  .my-viewer {
+    width: 80vw;
     height: 50vh;
-    }
-    .box{
-        /* height: 50vh; */
-    }
+  }
+  .box {
+    /* height: 50vh; */
+  }
 }

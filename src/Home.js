@@ -6,12 +6,14 @@ import HomeBanner from "./components/HomeBanner";
 import Timeline from "./components/Timeline";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
+import NewNavbar from "./components/NewNavbar";
 
 const Home = () => {
   return (
     <div className="Home">
       <Fragment>
-        <Navbar />
+        {/* <Navbar /> */}
+        <NewNavbar/>
         <div
           style={
             {

@@ -13,7 +13,9 @@ body{
 
 
 
-
+.font-syne{
+  font-family: "Syne Mono";
+}
 /* Filename - App.js */
 
 .App {

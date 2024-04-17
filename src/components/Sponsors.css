@@ -5,12 +5,14 @@
     background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
     padding: 12px;
     gap: 12px;
     border-radius: 8px;
     cursor: pointer;
     color: white;
+
   }
   
   .card::before {
@@ -42,6 +44,7 @@
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 700;
+    text-align: center;
   }
   
   .card p:not(.heading) {

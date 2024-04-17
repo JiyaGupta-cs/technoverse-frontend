@@ -250,6 +250,7 @@
     }
     .HomeBanner{
         gap: 1rem;
+        margin-top: 10vh;
     }
     .banner-text{width: 90vw;}
 }

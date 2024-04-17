@@ -30,7 +30,7 @@ const HomeBanner = () => {
 <img  className="_5-img" src={_3_img} alt="" />
 </div> */}
         </div>
-        <div className='text-white text-2xl '>Where Ideas and Tech Collide for limitless possiblities </div>
+        <div className='text-white text-2xl text-center font-syne'>Where Ideas and Tech Collide for limitless possiblities </div>
       <Link to="/register">
       <div className="banner-btn">
       <button class="btn" type="button">

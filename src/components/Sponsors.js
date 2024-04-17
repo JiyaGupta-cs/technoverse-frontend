@@ -3,7 +3,7 @@ import './Sponsors.css'
 
 const Sponsors = () => {
     return (
-        <div className='sponsors'>
+        <div id='sponsors' className='sponsors'>
              <h1 class="sponsor-heading text-center">Sponsors</h1>
             <div className="sponsor-cards">
                 <div class="card">

@@ -19,8 +19,8 @@ function Navbar() {
 <div>
 			<nav ref={navRef}>
 				<a className="font-syne" href="/#speakers">Speakers</a>
-				<a className="font-syne" href="/#">Sponsors</a>
-				<a className="font-syne" href="/#">FAQ</a>
+				<a className="font-syne" href="/#sponsors">Sponsors</a>
+				<a className="font-syne" href="/#faq">FAQ</a>
 				<a className="font-syne" href="/register">Register</a>
 				<button
 					className="nav-btn nav-close-btn"

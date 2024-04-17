@@ -4,7 +4,7 @@ import Viewer from "./Viewer";
 import sample from "../Assets/sample2.mp4";
 import technoverse from "../Assets/technoverse.png";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import NewNavbar from "./NewNavbar";
 import qr from "../Assets/qr.jpg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -118,10 +118,11 @@ const Register = () => {
       <video id="background-video" autoPlay loop muted>
         <source src={sample} type="video/mp4" />
       </video>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NewNavbar/>
       <ToastContainer />
       <div className="register w-full h-full">
-        <form class="r-form lg:mb-10 " onSubmit={HandleSubmit}>
+        <form class="r-form lg:mb-10 mt-20" onSubmit={HandleSubmit}>
           <img
             src={technoverse}
             width={"300px"}

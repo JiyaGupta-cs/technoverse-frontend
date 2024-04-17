@@ -15,18 +15,21 @@ import logo from "../Assets/title.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
+  // const [colorChange, setColorchange] = useState(false);
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 80) {
+  //     setColorchange(true);
+  //   } else {
+  //     setColorchange(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeNavbarColor);
   return (
     <Fragment className="nav-m">
-      <Nav className={colorChange ? "navbar colorChange" : "navbar"}>
+      {/* <Nav 
+       className={colorChange ? "navbar colorChange" : "navbar"}
+      > */}
+        <Nav>
 			  <NavContainer>
 				  <div className="w-44">
 					  

@@ -21,7 +21,7 @@ function Navbar() {
 				<a className="font-syne" href="/#speakers">Speakers</a>
 				<a className="font-syne" href="/#">Sponsors</a>
 				<a className="font-syne" href="/#">FAQ</a>
-				<a className="font-syne" href="/#">Register</a>
+				<a className="font-syne" href="/register">Register</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

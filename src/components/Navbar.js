@@ -11,6 +11,8 @@ import {
 } from "./NavbarStyles";
 import "../App.css";
 import nav_logo from '../Assets/t_logo.png'
+import logo from "../Assets/title.png"
+
 const Navbar = () => {
 	const [colorChange, setColorchange] = useState(false);
 	const changeNavbarColor = () => {
@@ -31,9 +33,9 @@ const Navbar = () => {
 				}
 			>
 				<NavContainer>
-					<NavLogo className="nav-bf" href="/">
-                    <img className="nav-bf glow" style={{width:'100%'}} src={nav_logo} alt="Your Alt Text"/>
-					</NavLogo>
+					<div className="flex w-44 items-center " href="/">
+                    <img className=""  src={logo} alt="Your Alt Text"/>
+					</div>
 					<MobileIcon>
 						<FaBars />
 					</MobileIcon>

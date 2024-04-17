@@ -104,17 +104,22 @@ const Register = () => {
       })
         .then(() => {
           console.log("data sent");
-         
+          setName("");
+          setEmail("");
+          setPhone("");
+          setbranch("");
+          setcollegename("");
+          setkietmail("");
+          setid("");
         })
         .catch((err) => {
           console.log(err);
         });
-      
     }
   };
 
   return (
-    <div className="text-white ">
+    <div className="text-white " style={{fontFamily:"Poppins"}}>
       <video id="background-video" autoPlay loop muted>
         <source src={sample} type="video/mp4" />
       </video>
@@ -227,6 +232,7 @@ const Register = () => {
                 onChange={(e) => {
                   setcollegename(e.target.value);
                 }}
+                required
               />
               <div className="w-44">
                 <img src={qr} alt="payment qr logo " />
@@ -237,6 +243,7 @@ const Register = () => {
                   className="r-input"
                   placeholder="Enter your transaction id"
                   onChange={(e) => setid(e.target.value)}
+                  required
                 />
               </div>
               <div className="text-red-400 ">
@@ -255,12 +262,15 @@ const Register = () => {
                 onChange={(e) => {
                   setkietmail(e.target.value);
                 }}
+                required
               />
             </div>
           )}
 
           <center>
-            <button class="r-button">Register</button>
+            <button class="r-button" type="submit">
+              Register
+            </button>
           </center>
         </form>
         <div className="box">

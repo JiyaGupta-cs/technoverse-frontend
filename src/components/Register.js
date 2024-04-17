@@ -63,8 +63,6 @@ const Register = () => {
     setEmailError("");
     setPhoneError("");
 
-    setEmail("hello");
-
     let isValid = true;
 
     console.log(data);

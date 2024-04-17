@@ -35,8 +35,8 @@ const Timeline = () => {
 
   return (
     <div>
-      <section class="timeline">
-        <h1 class="timeline-heading">Speakers</h1>
+      <section id="speakers" class="timeline">
+        <h1 class="timeline-heading text-center">Speakers</h1>
         <ul>
           <li>
             <div

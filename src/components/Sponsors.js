@@ -3,8 +3,8 @@ import './Sponsors.css'
 
 const Sponsors = () => {
     return (
-        <div className='sponsors'>
-             <h1 class="sponsor-heading">Sponsors</h1>
+        <div id='sponsors' className='sponsors'>
+             <h1 class="sponsor-heading text-center">Sponsors</h1>
             <div className="sponsor-cards">
                 <div class="card">
                 <p style={{fontSize:"80px"}}>⏳</p>

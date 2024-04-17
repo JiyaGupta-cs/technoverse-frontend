@@ -178,6 +178,7 @@
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+    margin-top: 10vh;
   }
 
 .innohack{
@@ -250,6 +251,7 @@
     }
     .HomeBanner{
         gap: 1rem;
+        margin-top: 10vh;
     }
     .banner-text{width: 90vw;}
 }

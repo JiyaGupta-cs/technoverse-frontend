@@ -18,10 +18,10 @@ function Navbar() {
 			<a href="/"><img className="n-logo" src={n_logo} alt="" /></a>
 <div>
 			<nav ref={navRef}>
-				<a href="/#speakers">Speakers</a>
-				<a href="/#">Sponsors</a>
-				<a href="/#">FAQ</a>
-				<a href="/#">Register</a>
+				<a className="font-syne" href="/#speakers">Speakers</a>
+				<a className="font-syne" href="/#">Sponsors</a>
+				<a className="font-syne" href="/#">FAQ</a>
+				<a className="font-syne" href="/#">Register</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

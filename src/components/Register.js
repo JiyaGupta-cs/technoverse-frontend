@@ -45,26 +45,7 @@ const Register = () => {
     return re.test(phone);
   };
 
-  // useEffect(() => {
-  //   setdata({
-  //     name: name,
-  //     email: email,
-  //     phone: phone,
-  //     branch: branch,
-  //     year: year,
-  //     kietmail: kietmail,
-  //     collegename: collegename,
-  //     transaction: id,
-  //   });
-  // });
-
-  const HandleSubmit = (e) => {
-    e.preventDefault();
-    setEmailError("");
-    setPhoneError("");
-
-    setEmail("hello");
-
+  useEffect(() => {
     setdata({
       name: name,
       email: email,
@@ -75,6 +56,15 @@ const Register = () => {
       collegename: collegename,
       transaction: id,
     });
+  });
+
+  const HandleSubmit = async (e) => {
+    // e.preventDefault();
+    setEmailError("");
+    setPhoneError("");
+
+    setEmail("hello");
+
     let isValid = true;
 
     console.log(data);
@@ -97,7 +87,7 @@ const Register = () => {
     if (isValid) {
       toast("✅ You are registered");
 
-      fetch("https://technoverse-backend.onrender.com/register", {
+      await fetch("https://technoverse-backend.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -111,6 +101,8 @@ const Register = () => {
           console.log(err);
         });
 
+      console.log(name);
+
       setName("");
       setEmail("");
       setPhone("");
@@ -118,9 +110,6 @@ const Register = () => {
       setcollegename("");
       setkietmail("");
       setid("");
-      console.log(name);
-      
-      
 
       console.log("this got executed ");
     }

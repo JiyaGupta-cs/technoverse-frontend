@@ -203,7 +203,7 @@ const Register = () => {
           </div>
 
           <div className="flex items-center">
-            <div className="flex items-center mr-4">
+            <div className="flex items-center mr-1 lg:mr-4">
               <input
                 className="r-input mt-5"
                 type="radio"

@@ -161,6 +161,41 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
+/*  */
+
+.timeline {
+  ul {
+    li {
+      div {
+        visibility: visible;
+        opacity: 0;
+        /* transition: all 0.5s ease-in-out; */
+      }
+      &:nth-of-type(odd) {
+        div {
+          transform: none;
+        }
+      }
+      &:nth-of-type(even) {
+        div {
+          transform: none;
+        }
+      }
+      /* &.in-view {
+        div {
+          transform: none;
+          visibility: visible;
+          opacity: 1;
+        }
+      } */
+    }
+  }
+}
+
+/*  */
+
+
   .timeline {
     ul {
       overflow-x: hidden;

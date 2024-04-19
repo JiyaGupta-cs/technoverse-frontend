@@ -41,7 +41,7 @@
   }
   
   .xheading {
-    font-size: 20px;
+    font-size: 24px !important;
     text-transform: capitalize;
     font-weight: 700;
     text-align: center;

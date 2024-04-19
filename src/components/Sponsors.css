@@ -67,6 +67,7 @@
   .sponsor-cards{
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }

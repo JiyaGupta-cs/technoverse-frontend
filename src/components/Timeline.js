@@ -75,32 +75,32 @@ const Timeline = () => {
       </div>
 
 
-        <div class="timeline-row">
-          <div class="timeline-time">Speaker Session 3</div>
-          <div class="timeline-content">
-            <Card image={supriya} />
-          </div>
-          <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 w-screen ">
-            <a
-              href="https://www.linkedin.com/in/supriyapurohit27?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-            >
-              {" "}
-              <div className="w-12 lg:w-16">
-                <img src={link} />
-              </div>
-            </a>
-            <a
-              href="https://www.instagram.com/supriyapurohittt?igsh=eWRqNWd1Z3dpaTg3"
-              target="_blank"
-            >
-              {" "}
-              <div className="w-12 lg:w-16">
-                <img src={insta} />
-              </div>
-            </a>
-          </div>
+      <div class="timeline-row">
+        <div class="timeline-time">Speaker Session 3</div>
+        <div class="timeline-content">
+          <Card image={supriya} />
         </div>
+        <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 w-screen ">
+          <a
+            href="https://www.linkedin.com/in/supriyapurohit27?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+          >
+            {" "}
+            <div className="w-12 lg:w-16">
+              <img src={link} />
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/supriyapurohittt?igsh=eWRqNWd1Z3dpaTg3"
+            target="_blank"
+          >
+            {" "}
+            <div className="w-12 lg:w-16">
+              <img src={insta} />
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

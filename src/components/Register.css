@@ -70,6 +70,7 @@
 .r-form label {
   color: #9b725b;
 }
+
 .r-form img {
   color: #9b725b;
 }
@@ -119,6 +120,7 @@
   background-color: transparent;
   color: white;
 }
+
 .register {
   /* min-height: 100vh; */
   display: flex;
@@ -128,9 +130,11 @@
   margin-top: 10vh;
   margin-bottom: 20vh;
 }
+
 .my-viewer {
   width: 40vw;
 }
+
 /* video background */
 #background-video {
   height: 100vh;
@@ -143,25 +147,32 @@
   bottom: 0;
   z-index: -1;
 }
+
 @media (max-width: 750px) {
+
   /* #background-video { display: none; } */
   body {
     /* background: url("https://i.pinimg.com/564x/60/86/53/608653e1f358ec5c40a9550e880eb4c0.jpg") no-repeat; */
     /* background-size: cover; */
   }
+
   .register {
     flex-direction: column;
   }
+
   .r-form {
     width: 90vw;
   }
+
   .r-form::before {
     width: 92vw;
   }
+
   .my-viewer {
     width: 80vw;
     height: 50vh;
   }
+
   .box {
     /* height: 50vh; */
   }

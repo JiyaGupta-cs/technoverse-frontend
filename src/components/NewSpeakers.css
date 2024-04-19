@@ -94,11 +94,14 @@
     /* width: 100vw; */
 }
   @media screen and (max-width: 600px) {
+
+
     .xsponsor-heading{
         font-size:2.6rem ;
     }
     .xsponsors{
         gap:1rem;
+        padding: 0;
     }
     .xsponsor-cards{flex-direction: column;}
   }

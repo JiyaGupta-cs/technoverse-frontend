@@ -189,7 +189,7 @@
     gap: 1rem;
 }
 .inno{
-    width: 35rem;
+    width: 30rem;
 }
 .hack{
     width: 18rem;
@@ -220,7 +220,7 @@
     width: 40vw;
     font-size: 20px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1013px) {
     .inno{
         width: 65vw;
     }

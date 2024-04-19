@@ -184,51 +184,33 @@
   }
 
   .timeline {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    ul {
+      li {
+        div {
+          width: 250px;
+          flex-direction: column;
+          div {
+            width: 80%;
+            margin: 10px;
+          }
+        }
+        &:nth-of-type(even) {
+          > div {
+            left: -289px;
+          }
+        }
+      }
+    }
   }
+}
 
-  .timeline-row {
-    flex-wrap: wrap;
-    padding: 0;
-    margin-bottom: 0px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
-
-  }
-
-  .timeline:after {
-    border: 0;
-  }
-
-  .timeline .timeline-row:nth-child(odd) {
-    padding: 0;
-  }
-
-  .timeline .timeline-row:nth-child(odd) .timeline-time {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 0 10px 0;
-    text-align: center;
-  }
-
-  .timeline .timeline-row:nth-child(odd) .timeline-content {
-    margin: 0;
-  }
-
-  .timeline .timeline-row:nth-child(odd) .timeline-content:before {
-    display: none;
-  }
-
-  .timeline .timeline-row:nth-child(odd) .timeline-content:after {
-    display: none;
+@media screen and (max-width: 600px) {
+  .timeline {
+    ul {
+      overflow-x: hidden;
+    }}
+  .time-div{
+    width: 70vw;
   }
 
   .timeline .timeline-row:nth-child(even) {

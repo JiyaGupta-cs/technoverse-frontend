@@ -80,7 +80,7 @@ const Timeline = () => {
           <div class="timeline-content">
             <Card image={supriya} />
           </div>
-          <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 ">
+          <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 w-screen ">
             <a
               href="https://www.linkedin.com/in/supriyapurohit27?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               target="_blank"

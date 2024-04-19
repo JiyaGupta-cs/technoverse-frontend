@@ -13,7 +13,7 @@ const Viewer = () => {
 
     // Call the function to add the CSS class after a delay of 1000ms
     const timeoutId = setTimeout(addClassToLogo, 1000);
-      
+
     // Cleanup function to clear the timeout
     return () => clearTimeout(timeoutId);
   }, []); // Empty dependency array to run the effect only once after the initial render

@@ -13,7 +13,7 @@ const Home = () => {
     <div className="Home">
       <Fragment>
         {/* <Navbar /> */}
-        <NewNavbar/>
+        <NewNavbar />
         <div
           style={
             {

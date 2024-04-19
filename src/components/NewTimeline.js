@@ -12,31 +12,34 @@ const NewTimeline = () => {
     
         <div class="containerx leftx">
             <div class="contentx">
-                <h2>
-                Speaker Session 1
-                </h2>
+                <h2 className='font-bold '>
+              Akshay Saini
+                          </h2>
+                          <h4>  Speaker Session 1</h4>
                 <p>
-                1:00 pm to 2:00 pm
+                1:20 pm to 2:00 pm
                 </p>
             </div>
         </div>
         <div class="containerx rightx">
-        <div class="contentx">
-                <h2>
+                      <div class="contentx">
+                          <h2 className='font-bold '>Keerti Purswani</h2>
+                <h4>
                 Speaker Session 2
-                </h2>
+                </h4>
                 <p>
-                2:00 pm to 3:00 pm
+                2:10 pm to 2:50 pm
                 </p>
             </div>
         </div>
         <div class="containerx leftx">
-        <div class="contentx">
-                <h2>
+                      <div class="contentx">
+                          <h2 className='font-bold '>Supriya Purohit</h2>
+                <h4>
                 Speaker Session 3
-                </h2>
+                </h4>
                 <p>
-                3:00 pm to 4:00 pm
+                3:00 pm to 3:40 pm
                 </p>
             </div>
 
@@ -45,9 +48,9 @@ const NewTimeline = () => {
        
         <div class="containerx rightx">
             <div class="contentx">
-                <h2>Goodies Distribution</h2>
+                <h2 className='font-bold '>Goodies Distribution</h2>
                 <p>
-                4:00 pm to 5:00 pm
+                3:40 pm to 4:00 pm
                 </p>
             </div>
         </div>

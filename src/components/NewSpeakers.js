@@ -6,7 +6,7 @@ import keertipurswani from '../Assets/keertipurswani.png'
 
 const NewSpeakers = () => {
     return (
-        <div id='xsponsors' className='xsponsors font-syne'>
+        <div id='speakers' className='xsponsors font-syne'>
             <h1 class="xsponsor-heading text-center">Speakers</h1>
             <div className="xsponsor-cards">
                 <div class="xcard">

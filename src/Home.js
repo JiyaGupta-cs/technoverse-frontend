@@ -8,6 +8,7 @@ import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import NewNavbar from "./components/NewNavbar";
 import NewTimeline from "./components/NewTimeline";
+import NewSpeakers from "./components/NewSpeakers";
 
 const Home = () => {
   return (
@@ -25,7 +26,8 @@ const Home = () => {
         ></div>
       </Fragment>
       <HomeBanner />
-      <Timeline />
+      {/* <Timeline /> */}
+      <NewSpeakers/>
       <NewTimeline/>
       <Sponsors />
       <FAQ />

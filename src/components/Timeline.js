@@ -11,18 +11,16 @@ import link from "../Assets/linkedin.png";
 const Timeline = () => {
   return (
     <div className="overflow-hidden ">
-      <h1 class="sponsor-heading text-center">Speakers</h1>
+      <h1 class="sponsor-heading text-center p-3 " style={{fontFamily:"Syne Mono"}}>Speakers</h1>
 
       <div class="container">
         <div class="timeline">
-
-
-
           <div class="timeline-row">
             <div class="timeline-time ">Speaker Session 1</div>
             <div class="timeline-content">
               <Card image={akshay} />
             </div>
+              <div className="sponser-heading text-white flex justify-center text-3xl">Akshay Saini</div>
             <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 ">
               <a
                 href="https://www.linkedin.com/in/akshaymarch7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
@@ -42,6 +40,7 @@ const Timeline = () => {
                   <img src={insta} />
                 </div>
               </a>
+              
             </div>
           </div>
 
@@ -50,13 +49,15 @@ const Timeline = () => {
             <div class="timeline-content">
               <Card image={kriti} />
             </div>
-            <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 ">
+            <div className="sponser-heading text-white flex justify-center text-3xl">keerti Purswani</div>
+
+            <div className="flex justify-center text-white text-center lg:justify-center gap-6 mt-4 mb-10 ">
               <a
                 href="https://www.linkedin.com/in/keertipurswani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
               >
                 {" "}
-                <div className="w-12 lg:w-16">
+                <div className="w-12 lg:w-12">
                   <img src={link} />
                 </div>
               </a>
@@ -65,7 +66,7 @@ const Timeline = () => {
                 target="_blank"
               >
                 {" "}
-                <div className="w-12 lg:w-16">
+                <div className="w-12 lg:w-12">
                   <img src={insta} />
                 </div>
               </a>
@@ -74,13 +75,14 @@ const Timeline = () => {
         </div>
       </div>
 
-
       <div class="timeline-row">
         <div class="timeline-time">Speaker Session 3</div>
-        <div class="timeline-content">
+        <div class="timeline-content  ">
           <Card image={supriya} />
         </div>
-        <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 w-screen ">
+        <div className="sponser-heading text-white flex justify-center text-3xl">supriya purohit</div>
+
+        <div className="flex justify-center text-white text-center lg:justify-center gap-10 mt-5 mb-10 ">
           <a
             href="https://www.linkedin.com/in/supriyapurohit27?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             target="_blank"

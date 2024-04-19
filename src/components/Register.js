@@ -115,16 +115,16 @@ const Register = () => {
 
   return (
     <div className="text-white font-syne " style={{ fontFamily: "Poppins" }}>
-      
-      <link rel="preconnect" href="https://fonts.gstatic.com"/>
-	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"/>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
 
       <video id="background-video" autoPlay loop muted>
         <source src={sample} type="video/mp4" />
       </video>
       {/* <Navbar /> */}
-      <NewNavbar/>
+      <NewNavbar />
       <ToastContainer />
       <div className="register w-full h-full">
         <form class="r-form lg:mb-10 mt-20" onSubmit={HandleSubmit}>

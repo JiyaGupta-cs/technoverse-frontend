@@ -1,0 +1,130 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474C93;
+    font-family: "League Spartan", sans-serif;
+} */
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.timelinex {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.timelinex::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    margin-left: -3px;
+    background-color: #FFF;
+}
+
+.containerx {
+    width: 50%;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+}
+
+.containerx::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -17px;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 5px solid #E5BF15;
+}
+
+.leftx {
+    left: 0;
+}
+
+.rightx {
+    left: 50%;
+}
+
+.leftx::before {
+    content: " ";
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border: medium solid #FFF;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #FFF;
+}
+
+.rightx::before {
+    content: " ";
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border: medium solid #FFF;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #FFF transparent transparent;
+}
+
+.rightx::after {
+    left: -18px;
+}
+
+.contentx {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #FFF;
+}
+
+@media screen and (max-width: 600px) {
+    .timelinex::after {
+        left: 31px;
+    }
+
+    .containerx {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .containerx::before {
+        left: 60px;
+        border: medium solid #FFF;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #FFF transparent transparent;
+    }
+
+    .leftx::after,
+    .rightx::after {
+        left: 14px;
+    }
+
+    .rightx {
+        left: 0%;
+    }
+}

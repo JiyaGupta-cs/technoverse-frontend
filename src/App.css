@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Prompt&family=Space+Grotesk&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Prompt&family=Space+Grotesk&display=swap');
 .App {
   text-align: center;
 
@@ -7,58 +7,62 @@
 
   /* overflow: hidden; */
 }
-body{
+
+body {
   background: url("https://img.freepik.com/premium-photo/night-sky-stars-galaxies-sky-dusk_494741-58778.jpg");
 }
 
 
 
-.font-syne{
+.font-syne {
   font-family: "Syne Mono";
 }
+
 /* Filename - App.js */
 
 .App {
   text-align: center;
-  }
-  
-  .navbar {
-    background-color: transparent;
-  }
-  
-  .navbar.colorChange {
-    /* background-color: #000; */
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    margin: 1rem 5rem;
-    padding: 10px 1rem;
-    border-radius: 12px;
-    height: 90px;
-    z-index: 100;
-    background-color: rgba(235, 235, 235, 0.1);
-    backdrop-filter: blur(10px);
-    transition: background-color 0.3s ease 0s;
-
-    -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); /* Standard syntax */
-  }
-
-  .navbar{
-    background-color: red;
-    margin: 1rem 5rem;
-  }
-  
-.kPOmOg{
-  height: fit-content !important;
-}
-.kJykRK{
-  height: fit-content !important;
 }
 
-  /* .nav-bf::before {
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.colorChange {
+  /* background-color: #000; */
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+  padding: 10px 1rem;
+  border-radius: 12px;
+  height: 90px;
+  z-index: 100;
+  background-color: rgba(235, 235, 235, 0.1);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease 0s;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  /* Standard syntax */
+}
+
+.navbar {
+  background-color: red;
+  margin: 1rem 5rem;
+}
+
+.kPOmOg {
+  height: fit-content !important;
+}
+
+.kJykRK {
+  height: fit-content !important;
+}
+
+/* .nav-bf::before {
     content: "";
     width: 105%;
     height: 105%;
@@ -100,6 +104,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

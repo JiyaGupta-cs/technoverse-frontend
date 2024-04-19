@@ -13,10 +13,10 @@ import { nav } from '../../../../config/content';
 // Function Returning new scroll object
 const newScrollObject = () => {
   // eslint-disable-next-line
-//   const SmoothScroll = require('smooth-scroll');
-//   return new SmoothScroll('', {
-    // offset: () => 100,
-//   });
+  //   const SmoothScroll = require('smooth-scroll');
+  //   return new SmoothScroll('', {
+  // offset: () => 100,
+  //   });
 };
 
 const handleScroll = (id) => {

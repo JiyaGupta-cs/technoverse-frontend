@@ -29,14 +29,14 @@ const Navbar = () => {
       {/* <Nav 
        className={colorChange ? "navbar colorChange" : "navbar"}
       > */}
-        <Nav>
-			  <NavContainer>
-				  <div className="w-44">
-					  
-          <Link to="/">
-            <img className="" src={logo} alt="Your Alt Text" />
-          </Link>
-			</div>
+      <Nav>
+        <NavContainer>
+          <div className="w-44">
+
+            <Link to="/">
+              <img className="" src={logo} alt="Your Alt Text" />
+            </Link>
+          </div>
           <MobileIcon>
             <FaBars />
           </MobileIcon>

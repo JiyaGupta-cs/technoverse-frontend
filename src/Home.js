@@ -7,13 +7,14 @@ import Timeline from "./components/Timeline";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import NewNavbar from "./components/NewNavbar";
+import NewTimeline from "./components/NewTimeline";
 
 const Home = () => {
   return (
     <div className="Home">
       <Fragment>
         {/* <Navbar /> */}
-        <NewNavbar/>
+        <NewNavbar />
         <div
           style={
             {
@@ -25,6 +26,7 @@ const Home = () => {
       </Fragment>
       <HomeBanner />
       <Timeline />
+      <NewTimeline/>
       <Sponsors />
       <FAQ />
       <Footer />

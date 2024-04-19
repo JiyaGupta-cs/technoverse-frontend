@@ -67,8 +67,10 @@
   .sponsor-cards{
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .sponsors{
     /* height: 100vh; */
@@ -81,10 +83,12 @@
   .sponsor-heading{
     font-family: "Syne Mono";
     color: #fff;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     font-size: 4em;
     margin-bottom: 30px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    text-align: center;
+    /* width: 100vw; */
 }
   @media screen and (max-width: 600px) {
     .sponsor-heading{

@@ -1,0 +1,104 @@
+.xcard {
+    position: relative;
+    width: 250px;
+    height: 410px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+
+  }
+  
+  .xcard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 260px;
+    height: 430px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .xcard::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .xheading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .xcard p:not(.heading) {
+    font-size: 14px;
+  }
+  
+  .xcard p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+  }
+  
+  .xcard:hover::after {
+    filter: blur(30px);
+  }
+  
+  .xcard:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }
+  .s-img{
+    height: 265px;
+    /* width: 100px; */
+  }
+  .xsponsor-cards{
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .xsponsors{
+    /* height: 100vh; */
+    margin-bottom: 20px;
+    padding: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;    
+  }
+  .xsponsor-heading{
+    font-family: "Syne Mono";
+    color: #fff;
+    /* letter-spacing: 5px; */
+    font-size: 4em;
+    margin-bottom: 30px;
+    /* padding: 0px 15px; */
+    text-align: center;
+    /* width: 100vw; */
+}
+  @media screen and (max-width: 600px) {
+    .xsponsor-heading{
+        font-size:2.6rem ;
+    }
+    .xsponsors{
+        gap:1rem;
+    }
+    .xsponsor-cards{flex-direction: column;}
+  }

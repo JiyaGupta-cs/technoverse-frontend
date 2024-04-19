@@ -6,13 +6,13 @@ import keertipurswani from '../Assets/keertipurswani.png'
 
 const NewSpeakers = () => {
     return (
-        <div id='xsponsors' className='xsponsors'>
+        <div id='xsponsors' className='xsponsors font-syne'>
             <h1 class="xsponsor-heading text-center">Speakers</h1>
             <div className="xsponsor-cards">
                 <div class="xcard">
                     {/* <p style={{ fontSize: "80px" }}>⏳</p> */}
                     <img className='s-img'  src={akshay} alt="" />
-                    <p class="heading">
+                    <p class="xheading">
                         Akshay Saini
                     </p>
                     <p>Namaste Dev, Founder
@@ -33,7 +33,7 @@ const NewSpeakers = () => {
                     <div class="xcard">
                     {/* <p style={{ fontSize: "80px" }}>⏳</p> */}
                     <img className='s-img'  src={keertipurswani} alt="" />
-                    <p class="heading">
+                    <p class="xheading">
                     Keerti Purswani
                     </p>
                     <p>Educosys , Founder
@@ -54,7 +54,7 @@ const NewSpeakers = () => {
                     <div class="xcard">
                     {/* <p style={{ fontSize: "80px" }}>⏳</p> */}
                     <img className='s-img'  src={Supriyapurohit} alt="" />
-                    <p class="heading">
+                    <p class="xheading">
                     Supriya Purohit
                     </p>
                     <p>Product manager, ex- Flipkart

@@ -1,7 +1,7 @@
 import React from 'react'
 import './NewSpeakers.css'
 import akshay from '../Assets/akshaysaini.png'
-import Supriyapurohit from '../Assets/Supriyapurohit.png'
+import Supriyapurohit from '../Assets/Supriyapurohit2.png'
 import keertipurswani from '../Assets/keertipurswani.png'
 
 const NewSpeakers = () => {

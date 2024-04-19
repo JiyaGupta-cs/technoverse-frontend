@@ -10,7 +10,7 @@ import link from "../Assets/linkedin.png";
 
 const Timeline = () => {
   return (
-    <div>
+    <div className="overflow-hidden ">
       <h1 class="sponsor-heading text-center">Speakers</h1>
 
       <div class="container">

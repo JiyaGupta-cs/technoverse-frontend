@@ -123,8 +123,13 @@
 }
 .timeline-row:nth-child(odd) {
   padding-left: 0;
-  /* padding-right: 50%; */
+  padding-right: 50%;
 }
+@media (max-width: 600px) {
+
+.timeline-row:nth-child(3) {  
+  padding-right: 0 !important;
+}}
 .timeline-row:nth-child(odd) .timeline-time {
   right: auto;
   left: 50%;

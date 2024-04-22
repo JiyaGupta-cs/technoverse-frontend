@@ -29,7 +29,7 @@ const Home = () => {
       {/* <Timeline /> */}
       <NewSpeakers/>
       <NewTimeline/>
-      <Sponsors />
+      {/* <Sponsors /> */}
       <FAQ />
       <Footer />
     </div>
